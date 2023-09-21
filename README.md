@@ -34,6 +34,12 @@ Berapakah acknowledge number (raw) pada packet yang menunjukkan aktivitas terseb
 - Begitulah
 - Pokok ketemu
 
+**Hasil**
+| <p align="center"> FTP Request untuk mengunggah </p> |
+| -------------------------------------------- |
+| <img src="https://github.com/FadhlyABD/Jarkom-Modul-1-D30-2023/blob/main/Images/soal1a.jpg" width = "400"/> |
+
+
 #### Soal C 
 Berapakah sequence number (raw) pada packet yang menunjukkan response dari aktivitas tersebut?
 
@@ -58,10 +64,10 @@ Berapakah acknowledge number (raw) pada packet yang menunjukkan response dari ak
 **Kesulitan Nomor 1 :**
 - Kesulitan mencari kolom info untuk perintah FTP mengunggah (`USER`, `PASS`, `STOR`) karena belum tahu cara untuk filtering info
 
-**Output**
-| <p align="center"> university_survey.sh </p> |
+**Hasil**
+| <p align="center"> FTP Response untuk mengunggah </p> |
 | -------------------------------------------- |
-| <img src="https://gitlab.com/timotihosi/sisop-praktikum-modul-1-2023-AM-B12/-/raw/main/Images/no1.png" width = "400"/> |
+| <img src="https://github.com/FadhlyABD/Jarkom-Modul-1-D30-2023/blob/main/Images/soal1b.jpg" width = "400"/> |
 
 ## Nomor 2
 ## Nomor 3
