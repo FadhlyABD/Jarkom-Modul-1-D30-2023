@@ -95,6 +95,33 @@ Berapa nilai checksum yang didapat dari header pada paket nomor 130?
 ## Nomor 5
 ## Nomor 6
 ## Nomor 7
+**soal**
+
+Berapa jumlah packet yang menuju IP 184.87.193.88?
+
+**Penyelesaian**
+
+Pertama tama filter paket yang destinasinya adalah IP 184.87.193.88 dengan menggunakan query ``ip.dst == 184.87.193.88``. hasil dari filter tersebut adalah : 
+
+Setelah itu kita hitung paket yang destinasi nya ke IP 184.87.193.88 yaitu : 6
 ## Nomor 8
+**Soal**
+
+Berikan kueri filter sehingga wireshark hanya mengambil semua protokol paket yang menuju port 80! (Jika terdapat lebih dari 1 port, maka urutkan sesuai dengan abjad)
+
+**Penyelesaian**
+
+query filter wireshark hanya mengambil semua protokol paket yang menuju port 80! yaitu ``tcp.dstport == 80 || udp.dstport == 80`` yang mana ``tcp`` adalah protocol yang di cari, lalu ``dstport`` adalah destinasi port nya,lalu ``||`` menunjukkan arti atau , lalu ``UDP`` adalah protocol yang di cari 
+
+Jadi ``tcp.dstport == 80 || udp.dstport == 80`` hanya mengambil semua paket yang menuju port 80.
+
+**Hasil**
+
 ## Nomor 9
+**Soal**
+
+Berikan kueri filter sehingga wireshark hanya mengambil paket yang berasal dari alamat 10.51.40.1 tetapi tidak menuju ke alamat 10.39.55.34
+
+**Penyelesaian**
+
 ## Nomor 10
