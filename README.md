@@ -18,7 +18,7 @@ Berapakah sequence number (raw) pada packet yang menunjukkan aktivitas tersebut?
 Berapakah acknowledge number (raw) pada packet yang menunjukkan aktivitas tersebut? 
 
 **Penyelesaian :**
-- Yang pertama kali dilakukan adalah melakukan filtering untuk protokol yang digunakan, yaitu FTP.
+- Yang pertama kali dilakukan adalah melakukan filtering untuk protokol yang digunakan, yaitu `ftp`.
 - Perlu diketahui bahwa untuk proses mengunggah, klien akan mengirimkan perintah FTP berupa command `USER`,`PASS`,`STOR`.
 - Sehingga kemudian dicari satu-persatu pada kolom info, paket FTP mana yang melakukan request salah satu perintah diatas.
 - Sequence number (raw) dan acknowledge number (raw) dari paket tersebut dapat dilihat di info TCP pada packet detail window.
