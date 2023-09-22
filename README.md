@@ -58,15 +58,25 @@ Berapakah acknowledge number (raw) pada packet yang menunjukkan response dari ak
 Sebutkan web server yang digunakan pada portal praktikum Jaringan Komputer
 
 **Penyelesaian**
-Pertama tama filter protocol HTTP di display filter (tampilkan foto) 
+Pertama tama filter protocol HTTP di display filter 
 
-Lalu klik paket yang memiliki protocol HTTP (tampilkan foto) 
+| <p align="center"> FTP Request untuk mengunggah </p> |
+| -------------------------------------------- |
+| <img src="https://github.com/FadhlyABD/Jarkom-Modul-1-D30-2023/blob/main/Images/No 2 (1).png" width = "400"/> |
+
+Lalu klik paket yang memiliki protocol HTTP 
+
+| <p align="center"> FTP Request untuk mengunggah </p> |
+| -------------------------------------------- |
+| <img src="https://github.com/FadhlyABD/Jarkom-Modul-1-D30-2023/blob/main/Images/No 2 (2).png" width = "400"/> |
 
 lalu kita klik ``Hypertext Transfer Protocol`` dan klik info protocol nya di situ ada server dari portal praktikum jarkom 
 
 **Hasil**
 
-(foto)
+| <p align="center"> FTP Request untuk mengunggah </p> |
+| -------------------------------------------- |
+| <img src="https://github.com/FadhlyABD/Jarkom-Modul-1-D30-2023/blob/main/Images/No 2 (3).png" width = "400"/> |
 
 Web Server dari portal Jarkom adalah ``gunicorn``
 
@@ -120,6 +130,12 @@ Berapa jumlah packet yang menuju IP 184.87.193.88?
 Pertama tama filter paket yang destinasinya adalah IP 184.87.193.88 dengan menggunakan query ``ip.dst == 184.87.193.88``. hasil dari filter tersebut adalah : 
 
 Setelah itu kita hitung paket yang destinasi nya ke IP 184.87.193.88 yaitu : 6
+**Hasil**
+
+| <p align="center"> FTP Request untuk mengunggah </p> |
+| -------------------------------------------- |
+| <img src="https://github.com/FadhlyABD/Jarkom-Modul-1-D30-2023/blob/main/Images/No 7.png" width = "400"/> |
+
 ## Nomor 8
 **Soal**
 
@@ -132,6 +148,9 @@ query filter wireshark hanya mengambil semua protokol paket yang menuju port 80!
 Jadi ``tcp.dstport == 80 || udp.dstport == 80`` hanya mengambil semua paket yang menuju port 80.
 
 **Hasil**
+| <p align="center"> FTP Request untuk mengunggah </p> |
+| -------------------------------------------- |
+| <img src="https://github.com/FadhlyABD/Jarkom-Modul-1-D30-2023/blob/main/Images/no 8 (1).png" width = "400"/> |
 
 ## Nomor 9
 **Soal**
@@ -146,6 +165,9 @@ Jadi query ``ip.src == 10.51.40.1 && ip.dst != 10.39.55.34`` berfungsi untuk men
 
 **Hasil**
 
+| <p align="center"> FTP Request untuk mengunggah </p> |
+| -------------------------------------------- |
+| <img src="https://github.com/FadhlyABD/Jarkom-Modul-1-D30-2023/blob/main/Images/no 9.png" width = "400"/> |\
 
 ## Nomor 10
 
@@ -154,12 +176,28 @@ Sebutkan kredensial yang benar ketika user mencoba login menggunakan Telnet
 
 **Penyelesaian**
 
-Pertama tama filter protocol di display filter dengan ``TELNET`` (isi foto) 
+Pertama tama filter protocol di display filter dengan ``TELNET`` 
 
-Lalu kita pilih salah satu paket yang memiliki protocol telnet, lalu klik kanan dan klik follow lalu klik TCP stream (tampilkan foto ) 
+| <p align="center"> FTP Request untuk mengunggah </p> |
+| -------------------------------------------- |
+| <img src="https://github.com/FadhlyABD/Jarkom-Modul-1-D30-2023/blob/main/Images/no 10 (1).png" width = "400"/> |\
 
-Setelah itu cari stream hingga menemukan jawaban nya (tampilkan foto)
+Lalu kita pilih salah satu paket yang memiliki protocol telnet, lalu klik kanan dan klik follow lalu klik TCP stream
+
+| <p align="center"> FTP Request untuk mengunggah </p> |
+| -------------------------------------------- |
+| <img src="https://github.com/FadhlyABD/Jarkom-Modul-1-D30-2023/blob/main/Images/no 10 (2).png" width = "400"/> |\
+
+Setelah itu cari stream hingga menemukan jawaban nya 
+
+| <p align="center"> FTP Request untuk mengunggah </p> |
+| -------------------------------------------- |
+| <img src="https://github.com/FadhlyABD/Jarkom-Modul-1-D30-2023/blob/main/Images/no 10 (3).png" width = "400"/> |\
 
 **Hasil**
 
-jawaban dari soal no 10 berada di stream 2 yaitu: ``dhafin:kesayangannyak0k0`` (tampilkan foto)
+jawaban dari soal no 10 berada di stream 2 yaitu: ``dhafin:kesayangannyak0k0`` 
+
+| <p align="center"> FTP Request untuk mengunggah </p> |
+| -------------------------------------------- |
+| <img src="https://github.com/FadhlyABD/Jarkom-Modul-1-D30-2023/blob/main/Images/no 10 (4).png" width = "400"/> |\
