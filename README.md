@@ -90,7 +90,7 @@ Berapa nilai checksum yang didapat dari header pada paket nomor 130?
 **Hasil**
 | <p align="center"> Nilai checksum paket nomor 130 </p> |
 | -------------------------------------------- |
-| <img src="https://github.com/FadhlyABD/Jarkom-Modul-1-D30-2023/blob/main/Images/soal4.jpg" width = "400"/> |
+| <img src="https://github.com/FadhlyABD/Jarkom-Modul-1-D30-2023/blob/main/Images/soal4.png" width = "400"/> |
 
 ## Nomor 5
 ## Nomor 6
