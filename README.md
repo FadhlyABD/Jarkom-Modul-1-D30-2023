@@ -14,25 +14,14 @@ User melakukan berbagai aktivitas dengan menggunakan protokol FTP. Salah satunya
 #### Soal A
 Berapakah sequence number (raw) pada packet yang menunjukkan aktivitas tersebut? 
 
-**Penyelesaian :**
-```
-
-```
-**Penjelasan :**
-- Begitulah
-- Pokok ketemu
-
-
 #### Soal B 
 Berapakah acknowledge number (raw) pada packet yang menunjukkan aktivitas tersebut? 
 
 **Penyelesaian :**
-```
-
-```
-**Penjelasan :**
-- Begitulah
-- Pokok ketemu
+- Yang pertama kali dilakukan adalah melakukan filtering untuk protokol yang digunakan, yaitu FTP.
+- Perlu diketahui bahwa untuk proses mengunggah, klien akan mengirimkan perintah FTP berupa command `USER`,`PASS`,`STOR`.
+- Sehingga kemudian dicari satu-persatu pada kolom info, paket FTP mana yang melakukan request salah satu perintah diatas.
+- Sequence number (raw) dan acknowledge number (raw) dari paket tersebut dapat dilihat di info TCP pada packet detail window.
 
 **Hasil**
 | <p align="center"> FTP Request untuk mengunggah </p> |
@@ -43,31 +32,19 @@ Berapakah acknowledge number (raw) pada packet yang menunjukkan aktivitas terseb
 #### Soal C 
 Berapakah sequence number (raw) pada packet yang menunjukkan response dari aktivitas tersebut?
 
-**Penyelesaian :**
-```
-
-```
-**Penjelasan :**
-- Begitulah
-- Pokok ketemu
-
 #### Soal D 
 Berapakah acknowledge number (raw) pada packet yang menunjukkan response dari aktivitas tersebut?
 
 **Penyelesaian :**
-```
-```
-**Penjelasan :**
-- Begitulah
-- Pokok ketemu
-
-**Kesulitan Nomor 1 :**
-- Kesulitan mencari kolom info untuk perintah FTP mengunggah (`USER`, `PASS`, `STOR`) karena belum tahu cara untuk filtering info
+- Untuk mencari response dari request sebelumnya, maka tinggal cari paket response yang paling dekat dibawahnya
 
 **Hasil**
 | <p align="center"> FTP Response untuk mengunggah </p> |
 | -------------------------------------------- |
 | <img src="https://github.com/FadhlyABD/Jarkom-Modul-1-D30-2023/blob/main/Images/soal1b.jpg" width = "400"/> |
+
+**Kesulitan Nomor 1 :**
+- Kesulitan mencari kolom info untuk perintah FTP mengunggah (`USER`, `PASS`, `STOR`) karena belum tahu cara untuk filtering info
 
 ## Nomor 2
 ## Nomor 3
