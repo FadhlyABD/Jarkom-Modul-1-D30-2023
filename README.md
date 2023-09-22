@@ -1,4 +1,4 @@
-![image](https://github.com/FadhlyABD/Jarkom-Modul-1-D30-2023/assets/114343225/ba37bc1b-032d-4f6a-835e-56f760311c7b)# Jarkom-Modul-1-D30-2023
+
 
 ## Group Member    :
 | Nama                              | NRP        |
@@ -60,13 +60,13 @@ Sebutkan web server yang digunakan pada portal praktikum Jaringan Komputer
 **Penyelesaian**
 Pertama tama filter protocol HTTP di display filter 
 
-| <p align="center"> FTP Request untuk mengunggah </p> |
+| <p align="center">  </p> |
 | -------------------------------------------- |
 | <img src="https://github.com/FadhlyABD/Jarkom-Modul-1-D30-2023/blob/main/Images/No 2 (1).png" width = "400"/> |
 
 Lalu klik paket yang memiliki protocol HTTP 
 
-| <p align="center"> FTP Request untuk mengunggah </p> |
+| <p align="center">  </p> |
 | -------------------------------------------- |
 | <img src="https://github.com/FadhlyABD/Jarkom-Modul-1-D30-2023/blob/main/Images/No 2 (2).png" width = "400"/> |
 
@@ -74,7 +74,7 @@ lalu kita klik ``Hypertext Transfer Protocol`` dan klik info protocol nya di sit
 
 **Hasil**
 
-| <p align="center"> FTP Request untuk mengunggah </p> |
+| <p align="center">  </p> |
 | -------------------------------------------- |
 | <img src="https://github.com/FadhlyABD/Jarkom-Modul-1-D30-2023/blob/main/Images/No 2 (3).png" width = "400"/> |
 
@@ -128,35 +128,62 @@ c. Dari semua alamat IP yang tercapture, IP berapakah yang merupakan public IP?
 
 **Penyelesaian**
 
-Pertama tama buka dulu file txt yang di pasword di dalam zip yang ada di soal dengan cara memfilter protocol SMTP (foto)
+Pertama tama buka dulu file txt yang di pasword di dalam zip yang ada di soal dengan cara memfilter protocol SMTP 
 
-lalu pilih salah satu paket yang memiliki protocol SMTP,lalu kita klik kanan dan tekan tombol follow, klik tcp stream  (foto)
+| <p align="center">  </p> |
+| -------------------------------------------- |
+| <img src="https://github.com/FadhlyABD/Jarkom-Modul-1-D30-2023/blob/main/Images/no 5 (2).png" width = "400"/> |
 
-setelah itu cari pasrword yang ada di TCP stream nya  (foto)
+lalu pilih salah satu paket yang memiliki protocol SMTP,lalu kita klik kanan dan tekan tombol follow, klik tcp stream  
 
-setelah ketemu pasword nya, pasword tersebut harus di decode dulu menjadi suatu code yang dapat membuka file txt yang ada di zip (foto) 
+| <p align="center">  </p> |
+| -------------------------------------------- |
+| <img src="https://github.com/FadhlyABD/Jarkom-Modul-1-D30-2023/blob/main/Images/no 5 (3).png" width = "400"/> |
 
-setelah file txt nya terbuka, alamat ncat nya akan keluar yaitu ``nc 10.21.78.111 11111`` (foto)
+setelah itu cari pasrword yang ada di TCP stream nya  
+
+| <p align="center">  </p> |
+| -------------------------------------------- |
+| <img src="https://github.com/FadhlyABD/Jarkom-Modul-1-D30-2023/blob/main/Images/no 5 (4).png" width = "400"/> |
+
+setelah ketemu pasword nya, pasword tersebut harus di decode dulu menjadi suatu code yang dapat membuka file txt yang ada di zip  
+
+| <p align="center">  130 </p> |
+| -------------------------------------------- |
+| <img src="https://github.com/FadhlyABD/Jarkom-Modul-1-D30-2023/blob/main/Images/no 5 (5).png" width = "400"/> |
+
+setelah file txt nya terbuka, alamat ncat nya akan keluar yaitu ``nc 10.21.78.111 11111`` 
+
+| <p align="center">  </p> |
+| -------------------------------------------- |
+| <img src="https://github.com/FadhlyABD/Jarkom-Modul-1-D30-2023/blob/main/Images/no 5 (2a).png" width = "400"/> |
 
 #### Penyelesaian Nomor 5 A
 
-Untuk menentukan berapa banyak paket yang berhasil di capture dari bisa di lihat di wireshark bagian bawah kanan yang telah di filter protocol SMTP nya ( foto ) 
+Untuk menentukan berapa banyak paket yang berhasil di capture dari bisa di lihat di wireshark bagian bawah kanan yang telah di filter protocol SMTP nya 
+
+| <p align="center">  </p> |
+| -------------------------------------------- |
+| <img src="https://github.com/FadhlyABD/Jarkom-Modul-1-D30-2023/blob/main/Images/no 5 (6) .png" width = "400"/> |
 
 #### Penyelesaian Nomor 5 B 
 
-Untuk nenemukan port yang ada di server untuk servide SMTP dengan cara memfilter protocol SMTP di display filter, lalu kita pilih salah satu paket yang protocol nya bertipe SMTP, lalu kita cek di ``Transmission Tranfer Protocol`` lalu kita cari ``Destination port`` nya (foto) 
+Untuk nenemukan port yang ada di server untuk servide SMTP dengan cara memfilter protocol SMTP di display filter, lalu kita pilih salah satu paket yang protocol nya bertipe SMTP, lalu kita cek di ``Transmission Tranfer Protocol`` lalu kita cari ``Destination port`` nya 
+
+| <p align="center"> </p> |
+| -------------------------------------------- |
+| <img src="https://github.com/FadhlyABD/Jarkom-Modul-1-D30-2023/blob/main/Images/no 5 (8).png" width = "400"/> |
 
 #### Penyelesaian Nomor 5 C
 
-Untuk Menemukan IP yang merupakan IP public dengan cara mengecek apakah no alamat IP awal nya itu 74 atau tidak, jadi jika Ip paketnya di dahului dengan angka 74 maka IP tersebut merupakan Ip public (foto)
+Untuk Menemukan IP yang merupakan IP public dengan cara mengecek apakah no alamat IP awal nya itu 74 atau tidak, jadi jika Ip paketnya di dahului dengan angka 74 maka IP tersebut merupakan Ip public 
 
 **Hasil**
 
 Hasil dari decode pasword file txt adalah ``5implePas5word``
-(foto)
 
 alamat Ncat dari soal no 5 adalah ``nc 10.21.78.111 11111``
-(foto)
+
 
 #### Hasil Nomor 5 A 
 
@@ -187,7 +214,7 @@ Pertama tama filter paket yang destinasinya adalah IP 184.87.193.88 dengan mengg
 Setelah itu kita hitung paket yang destinasi nya ke IP 184.87.193.88 yaitu : 6
 **Hasil**
 
-| <p align="center"> FTP Request untuk mengunggah </p> |
+| <p align="center">  </p> |
 | -------------------------------------------- |
 | <img src="https://github.com/FadhlyABD/Jarkom-Modul-1-D30-2023/blob/main/Images/No 7.png" width = "400"/> |
 
@@ -203,7 +230,7 @@ query filter wireshark hanya mengambil semua protokol paket yang menuju port 80!
 Jadi ``tcp.dstport == 80 || udp.dstport == 80`` hanya mengambil semua paket yang menuju port 80.
 
 **Hasil**
-| <p align="center"> FTP Request untuk mengunggah </p> |
+| <p align="center">  </p> |
 | -------------------------------------------- |
 | <img src="https://github.com/FadhlyABD/Jarkom-Modul-1-D30-2023/blob/main/Images/no 8 (1).png" width = "400"/> |
 
@@ -220,7 +247,7 @@ Jadi query ``ip.src == 10.51.40.1 && ip.dst != 10.39.55.34`` berfungsi untuk men
 
 **Hasil**
 
-| <p align="center"> FTP Request untuk mengunggah </p> |
+| <p align="center">  </p> |
 | -------------------------------------------- |
 | <img src="https://github.com/FadhlyABD/Jarkom-Modul-1-D30-2023/blob/main/Images/no 9.png" width = "400"/> |\
 
@@ -233,19 +260,19 @@ Sebutkan kredensial yang benar ketika user mencoba login menggunakan Telnet
 
 Pertama tama filter protocol di display filter dengan ``TELNET`` 
 
-| <p align="center"> FTP Request untuk mengunggah </p> |
+| <p align="center">  </p> |
 | -------------------------------------------- |
 | <img src="https://github.com/FadhlyABD/Jarkom-Modul-1-D30-2023/blob/main/Images/no 10 (1).png" width = "400"/> |\
 
 Lalu kita pilih salah satu paket yang memiliki protocol telnet, lalu klik kanan dan klik follow lalu klik TCP stream
 
-| <p align="center"> FTP Request untuk mengunggah </p> |
+| <p align="center">  </p> |
 | -------------------------------------------- |
 | <img src="https://github.com/FadhlyABD/Jarkom-Modul-1-D30-2023/blob/main/Images/no 10 (2).png" width = "400"/> |\
 
 Setelah itu cari stream hingga menemukan jawaban nya 
 
-| <p align="center"> FTP Request untuk mengunggah </p> |
+| <p align="center">  </p> |
 | -------------------------------------------- |
 | <img src="https://github.com/FadhlyABD/Jarkom-Modul-1-D30-2023/blob/main/Images/no 10 (3).png" width = "400"/> |\
 
@@ -253,7 +280,7 @@ Setelah itu cari stream hingga menemukan jawaban nya
 
 jawaban dari soal no 10 berada di stream 2 yaitu: ``dhafin:kesayangannyak0k0`` 
 
-| <p align="center"> FTP Request untuk mengunggah </p> |
+| <p align="center">  </p> |
 | -------------------------------------------- |
 | <img src="https://github.com/FadhlyABD/Jarkom-Modul-1-D30-2023/blob/main/Images/no 10 (4).png" width = "400"/> |\
 
