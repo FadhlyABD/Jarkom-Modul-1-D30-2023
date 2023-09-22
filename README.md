@@ -53,6 +53,22 @@ Berapakah acknowledge number (raw) pada packet yang menunjukkan response dari ak
 - Kesulitan mencari kolom info untuk perintah FTP mengunggah (`USER`, `PASS`, `STOR`) karena belum tahu cara untuk filtering info
 
 ## Nomor 2
+**Soal**
+
+Sebutkan web server yang digunakan pada portal praktikum Jaringan Komputer
+
+**Penyelesaian**
+Pertama tama filter protocol HTTP di display filter (tampilkan foto) 
+
+Lalu klik paket yang memiliki protocol HTTP (tampilkan foto) 
+
+lalu kita klik ``Hypertext Transfer Protocol`` dan klik info protocol nya di situ ada server dari portal praktikum jarkom 
+
+**Hasil**
+
+(foto)
+
+Web Server dari portal Jarkom adalah ``gunicorn``
 
 ## Nomor 3
 Dapin sedang belajar analisis jaringan. Bantulah Dapin untuk mengerjakan soal berikut:
@@ -124,4 +140,26 @@ Berikan kueri filter sehingga wireshark hanya mengambil paket yang berasal dari 
 
 **Penyelesaian**
 
+Query untuk menyelesaikan  wireshark hanya mengambil paket yang berasal dari alamat 10.51.40.1 tetapi tidak menuju ke alamat adalah ``ip.src == 10.51.40.1 && ip.dst != 10.39.55.34`` yang mana ``ip.src`` berfungsi untuk mencari source IP ,sedangkan ``ip.dst`` berfungsi untuk mencari ip destination,lalu ``!=`` menunjukkan bhawa nilai dari tidak sama dengan.
+
+Jadi query ``ip.src == 10.51.40.1 && ip.dst != 10.39.55.34`` berfungsi untuk mengfilter paket yang source nya dari ip 10.51.40.1 dan destinasi nya bukan IP 10.39.55.34
+
+**Hasil**
+
+
 ## Nomor 10
+
+**Soal**
+Sebutkan kredensial yang benar ketika user mencoba login menggunakan Telnet
+
+**Penyelesaian**
+
+Pertama tama filter protocol di display filter dengan ``TELNET`` (isi foto) 
+
+Lalu kita pilih salah satu paket yang memiliki protocol telnet, lalu klik kanan dan klik follow lalu klik TCP stream (tampilkan foto ) 
+
+Setelah itu cari stream hingga menemukan jawaban nya (tampilkan foto)
+
+**Hasil**
+
+jawaban dari soal no 10 berada di stream 2 yaitu: ``dhafin:kesayangannyak0k0`` (tampilkan foto)
