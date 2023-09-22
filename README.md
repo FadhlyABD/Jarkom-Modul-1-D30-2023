@@ -65,7 +65,7 @@ Protokol layer transport apa yang digunakan?
 
 **Penyelesaian :**
 - Yang pertama kali dilakukan adalah melakukan filtering untuk memperoleh seluruh paket yang sesuai dengan yang diminta pada soal.
-- Filter expression digunakan `(ip.src == 239.255.255.250 && udp.srcport == 3702) || (ip.dst == 239.255.255.250 && udp.dstport == 3702)`.
+- Filter expression dengan `(ip.src == 239.255.255.250 && udp.srcport == 3702) || (ip.dst == 239.255.255.250 && udp.dstport == 3702)`.
 - Setelah tampil seluruh paket yang sesuai, bisa dimulai untuk melakukan perhitungan secara manual jumlah paket yang tercapture.
 - Protokol yang digunakan dapat dilihat baik di kolom protocol pada listing window maupun di keterangan pada detail window.
 
