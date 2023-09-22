@@ -1,4 +1,4 @@
-# Jarkom-Modul-1-D30-2023
+![image](https://github.com/FadhlyABD/Jarkom-Modul-1-D30-2023/assets/114343225/ba37bc1b-032d-4f6a-835e-56f760311c7b)# Jarkom-Modul-1-D30-2023
 
 ## Group Member    :
 | Nama                              | NRP        |
@@ -119,6 +119,61 @@ Berapa nilai checksum yang didapat dari header pada paket nomor 130?
 | <img src="https://github.com/FadhlyABD/Jarkom-Modul-1-D30-2023/blob/main/Images/soal4.png" width = "400"/> |
 
 ## Nomor 5
+**Soal**
+
+Elshe menemukan suatu file packet capture yang menarik. Bantulah Elshe untuk menganalisis file packet capture tersebut.
+a. Berapa banyak packet yang berhasil di capture dari file pcap tersebut?
+b. Port berapakah pada server yang digunakan untuk service SMTP?
+c. Dari semua alamat IP yang tercapture, IP berapakah yang merupakan public IP?
+
+**Penyelesaian**
+
+Pertama tama buka dulu file txt yang di pasword di dalam zip yang ada di soal dengan cara memfilter protocol SMTP (foto)
+
+lalu pilih salah satu paket yang memiliki protocol SMTP,lalu kita klik kanan dan tekan tombol follow, klik tcp stream  (foto)
+
+setelah itu cari pasrword yang ada di TCP stream nya  (foto)
+
+setelah ketemu pasword nya, pasword tersebut harus di decode dulu menjadi suatu code yang dapat membuka file txt yang ada di zip (foto) 
+
+setelah file txt nya terbuka, alamat ncat nya akan keluar yaitu ``nc 10.21.78.111 11111`` (foto)
+
+#### Penyelesaian Nomor 5 A
+
+Untuk menentukan berapa banyak paket yang berhasil di capture dari bisa di lihat di wireshark bagian bawah kanan yang telah di filter protocol SMTP nya ( foto ) 
+
+#### Penyelesaian Nomor 5 B 
+
+Untuk nenemukan port yang ada di server untuk servide SMTP dengan cara memfilter protocol SMTP di display filter, lalu kita pilih salah satu paket yang protocol nya bertipe SMTP, lalu kita cek di ``Transmission Tranfer Protocol`` lalu kita cari ``Destination port`` nya (foto) 
+
+#### Penyelesaian Nomor 5 C
+
+Untuk Menemukan IP yang merupakan IP public dengan cara mengecek apakah no alamat IP awal nya itu 74 atau tidak, jadi jika Ip paketnya di dahului dengan angka 74 maka IP tersebut merupakan Ip public (foto)
+
+**Hasil**
+
+Hasil dari decode pasword file txt adalah ``5implePas5word``
+(foto)
+
+alamat Ncat dari soal no 5 adalah ``nc 10.21.78.111 11111``
+(foto)
+
+#### Hasil Nomor 5 A 
+
+Banyak paket yang di capture adalah ``60``
+
+#### Hasil Norom 5 B
+
+
+
+Destination Port ``25``
+
+#### Hasil 5 C
+
+
+jumlah alamat Ip yang merupakan IP publik adalah ``74.53.140.153`` 
+
+
 ## Nomor 6
 ## Nomor 7
 **soal**
@@ -201,3 +256,6 @@ jawaban dari soal no 10 berada di stream 2 yaitu: ``dhafin:kesayangannyak0k0``
 | <p align="center"> FTP Request untuk mengunggah </p> |
 | -------------------------------------------- |
 | <img src="https://github.com/FadhlyABD/Jarkom-Modul-1-D30-2023/blob/main/Images/no 10 (4).png" width = "400"/> |\
+
+**Kendala** 
+masih harus nyari TCP stream satu persatu 
